@@ -1,0 +1,135 @@
+.settings-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom:1em;
+}
+
+h1.settings-spacing {
+  margin-bottom:.125em;
+}
+.settings-container {
+  display:flex;
+  gap:2.5em;
+}
+
+.settings-right {
+  justify-content: space-between;
+  display:flex;
+  flex-direction: column;
+  border-radius:12.5px;
+  margin-left:auto;
+  align-items: space-between;
+  width: 45%;
+}
+
+.settings-panel-spacing {
+  margin:1em;
+}
+
+
+.settings-panel {
+  background:#ffffff0f;
+  padding:2em 4em;
+  border-radius:12.5px;
+  text-align: center;
+}
+
+.settings-panel.location-panel {
+  padding: 2.75rem 1rem;
+}
+.settings-label {
+  color:#fff;
+  text-align: left;
+}
+
+.settings-grid {
+  display:grid;
+  align-items: center;
+}
+
+.grid-2 {
+  grid-template-columns: 1fr 2fr;
+}
+
+.grid-2-1 {
+  grid-template-columns: repeat(2,1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3,1fr);
+}
+
+.settings-full {
+  width:100%;
+}
+
+h3.settings-title {
+  margin-bottom: 1.25em;
+}
+.settings-stat {
+  text-align: center;
+}
+
+.settings-user-details {
+  display:flex;
+}
+
+.settings-form > form {
+  margin: 0 auto;
+  max-width: 300px;
+  position: relative;
+}
+
+.settings-form form > * {
+  margin-bottom: 1rem;
+}
+
+.settings-form h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.settings-form p {
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #35414f85;
+}
+
+.settings-form button {
+  margin-top: 1rem;
+}
+
+.settings-full-wrapper {
+  width: 80%;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 1170px) {
+
+  .settings-full-wrapper {
+    justify-content: flex-start;
+  }
+  
+  .settings-right {
+    width:100%;
+  }
+  .settings-panel.location-panel {
+    margin-bottom:2.5em;
+  }
+  .settings-container {
+    flex-direction: column;
+  }
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+  .settings-panel {
+    padding:1.5em;
+  }
+  .settings-label {
+    margin-bottom:.25em;
+  }
+}
